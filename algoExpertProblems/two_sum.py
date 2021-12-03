@@ -13,3 +13,7 @@ def two_sum(array, target_sum):
 array1 = [4, 2, 7, 5, 3, 1]
 targetSum = 10
 print(two_sum(array1, targetSum))
+
+
+def two_sum_2(array2, value):
+    array2.sort()
