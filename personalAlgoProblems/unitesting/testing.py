@@ -1,6 +1,7 @@
 import unittest
 from personalAlgoProblems.unitesting.person import Person as PersonClass
 
+
 class Testing(unittest.TestCase):
     def test_string(self):
         a = 'some'
@@ -45,3 +46,7 @@ class Testing(unittest.TestCase):
             else:
                 print('Testing for get_name no user test')
                 self.assertEqual("There is no such user here", self.person.get_name(i))
+
+
+if __name__ == '__main__':
+    unittest.main()
