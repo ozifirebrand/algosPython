@@ -5,11 +5,11 @@ def is_valid_subsequence(array, sequence):
     #     if array[array_index] == sequence[sequence_index]:
     #         sequence_index += 1
     #     array_index += 1
-    for item in array:
-        for item2 in array:
-            if item2 == item:
-                sequence_index += 1
-            else : continue
+    for value in array:
+        if len(sequence)== sequence_index:
+            break
+        if sequence[sequence_index]== value:
+            sequence_index+=1
     return sequence_index == len(sequence)
 
 
