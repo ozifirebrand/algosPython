@@ -6,10 +6,10 @@ def is_valid_subsequence(array, sequence):
     #         sequence_index += 1
     #     array_index += 1
     for value in array:
-        if len(sequence)== sequence_index:
+        if len(sequence) == sequence_index:
             break
-        if sequence[sequence_index]== value:
-            sequence_index+=1
+        if sequence[sequence_index] == value:
+            sequence_index += 1
     return sequence_index == len(sequence)
 
 

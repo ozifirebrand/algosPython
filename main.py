@@ -1,16 +1,12 @@
-# This is a sample Python script.
+import unittest
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from personalAlgoProblems.unitesting.person import Person
+from personalAlgoProblems.unitesting.testing import Testing
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    person = Person()
+    print('User Nonye has been added with id ', person.set_name('Nonye'))
+    print('User Esse has been added with id ', person.set_name('Esse'))
+    print('Users with ids 0 and 1 are ', person.get_name(0), 'and ', person.get_name(1), 'respectively')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    unittest.main()
