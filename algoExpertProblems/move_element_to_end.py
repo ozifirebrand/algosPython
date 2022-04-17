@@ -24,5 +24,20 @@ def moveElementToEnd(array, toMove):
     return array
 
 
-array = [2, 1, 2, 2, 2, 3, 4, 2]
-print(moveElementToEnd(array, 2))
+def maximum_element(an_array, index, current_max):
+
+    if len(an_array) == 0:
+        return 0
+    if index == len(an_array) - 1:
+        return current_max
+    if an_array[index] > current_max:
+        current_max = an_array[index]
+
+    index += 1
+    return maximum_element(an_array, index, current_max)
+
+
+ma_element = float('-inf')
+array = [562, 1, 562, 2, 2, 2, 8, 13, 4, 2]
+print(moveElementToEnd(array, 562))
+print(maximum_element(array, 0, ma_element))
